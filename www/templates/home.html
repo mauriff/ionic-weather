@@ -1,0 +1,17 @@
+<ion-view title="Home" id="page1">
+    <ion-content padding="true" class="has-header">
+      <form class="list">
+                  <label class="item item-input" name="booking">
+                      <input type="text" name="input" ng-model="ciudad.nombre" placeholder="#Ciudad">
+                  </label>
+                  <a  ng-click="getClima()" id="booking-button6" class="button button-positive  button-block">Buscar</a>
+              </form>
+              <ion-list>
+                  <ion-item class="item-avatar">
+                    <img src="{{page.img}}"  />
+                      <h2>{{page.temperatura}}</h2>
+                      <h2>{{page.weather[0].description}}</h2>
+                  </ion-item>
+              </ion-list>
+    </ion-content>
+</ion-view>
